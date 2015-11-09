@@ -1,0 +1,73 @@
+doctype html
+h3 REGISTER_USER
+  form(action='/register_user', method='POST')
+    | name :
+    input(type='text', name='name')
+    | email :
+    input(type='text', name='email')
+    | password :
+    input(type='text', name='password')
+    input(type='submit', value='submit')
+
+h3 PICKUP_ADDRESS
+  form(action='/pickupaddr', method='POST')
+    | user_access_token :
+    input(type='text', name='accesstoken')
+    | address :
+    input(type='text', name='address')
+    | pickup_lat :
+    input(type='text', name='pickuplat')
+    | pickup_long :
+    input(type='text', name='pickuplong')
+    input(type='submit', value='submit')
+
+h3 DELIVERY_ADDRESS
+  form(action='/deliveryaddr', method='POST')
+    | user_access_token :
+    input(type='text', name='accesstoken')
+    | address :
+    input(type='text', name='address')
+    | delivery_lat :
+    input(type='text', name='deliverylat')
+    | delivery_long :
+    input(type='text', name='deliverylong')
+    input(type='submit', value='submit')
+
+h3 ORDERS
+  form(action='/orders', method='POST')
+    | order_id :
+    input(type='text', name='orderid')
+    | pickup_id :
+    input(type='text', name='pickupid')
+    | delivery_id :
+    input(type='text', name='deliveryid')
+    | order_details :
+    input(type='text', name='orderdetails')
+    | special_instruction:
+    input(type='text', name='specialinstruction')
+    | recepient_name :
+    input(type='text', name='recepientname')
+    | delivery_address :
+    input(type='text', name='deliveryaddress')
+    | delivery_lat :
+    input(type='text', name='deliverylat')
+    | delivery_long :
+    input(type='text', name='deliverylong')
+    | delivery_time :
+    input(type='datetime-local', name='deliverytime')
+    | pickup_time :
+    input(type='datetime-local', name='pickuptime')
+    | pickup_address :
+    input(type='text', name='pickupaddr')
+    | pickup_name :
+    input(type='text', name='pickupname')
+    | pickup_lat :
+    input(type='text', name='pickuplat')
+    | pickup_long :
+    input(type='text', name='pickuplong')
+    | timezone :
+    input(type='text', name='timezone')
+    input(type='submit', value='submit')
+    
+
+
