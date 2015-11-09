@@ -1,0 +1,19 @@
+{
+  "name": "mysite",
+  "version": "0.0.1",
+  "description": "My forst Site with JADE",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "mysql": "^2.9.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.52.4"
+  }
+}

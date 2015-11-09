@@ -1,0 +1,18 @@
+doctype // Earlier !!!5 was used for html5 which is deprecated now
+html
+  head
+    title #{title} - My Site
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 NodeJS,Express,Jade and Stylus Sample App
+    .container 
+      //Classes defined in css file
+      .main-content
+        block content 
+        //Block content will be placed here
+      .sidebar
+        block sidebar 
+        //Block side bar will be placed here
+    footer
+      p Running on node with Express, Jade and Stylus
